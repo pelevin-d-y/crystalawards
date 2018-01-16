@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+  <title>Crystal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+</head>
+<body>
+  <canvas id="c1"></canvas>
+  <canvas id="c2"></canvas>
+  <div class="filter"></div>
+  <div>
+    <div class="main-nav-overlay">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#page-1" class="main-nav__link">Главная</a></li>
+          <li><a href="#page-2" class="main-nav__link">Место проведния</a></li>
+          <li><a href="#page-3" class="main-nav__link">Dress code</a></li>
+          <li><a href="#page-4" class="main-nav__link">Рассадка</a></li>
+          <li><a href="#page-5" class="main-nav__link">Контакты</a></li>
+          <li><a href="#page-6" class="main-nav__link">Фото и видео</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="navToggle" class="navBurger"></div>
+  </div>
+  <div id="fullpage">
+    <header class="container page-header section">
+      <div class="page-header__content">
+        <div class="page-header__img"><img src="./images/header.png" class="img"></div>
+        <div class="page-header__text">Только самых блистательных сотрудников мы приглашаем на празднование Нового 2018 года.</div>
+        <div class="page-header__text">Вас ждет яркий вечер и торжественное награждение самых лучших.</div>
+      </div>
+    </header>
+    <section class="location container section">
+      <div class="location__content">
+        <div class="location__text">Мы ждем вас
+          <div class="location__data">25 января</div> начало в<span> 18:00</span>
+        </div>
+        <div class="location__map"><img src="./images/map.png" class="map"></div>
+      </div>
+    </section>
+    <section class="container section">
+      <div class="dress-code">
+        <div class="dress-code__text">
+          <div class="dress-code__title">Рекомендуемый DRESS CODE</div>
+          <div class="dress-code__section-title">Леди</div>
+          <div class="dress-code__section-text">Вечерние и коктейльные платья. Вечерний make-up, пайетки и аксессуары, подчеркивающие сияние вашей красоты.</div>
+          <div class="dress-code__section-title">Джентельмены</div>
+          <div class="dress-code__section-text">Black-tie, intelligent, casual и все, что сделает вас неотразимым. Приветствуются аксессуары в crystal стилистике.</div>
+        </div>
+        <div class="dress-code__img"><img src="./images/people.png" class="derss-code__people"></div>
+      </div>
+    </section>
+    <section class="container section">
+      <div class="seating__content">
+        <div class="seating__title">Рассадка</div>
+        <form action="#" method="get" class="seating-form">
+          <input type="text" name="surname" placeholder="Введите ФИО" class="seating__input">
+          <button class="seating__button">Узнать номер стола</button>
+        </form>
+      </div>
+    </section>
+    <section class="container section">
+      <div class="contacts">
+        <div class="contacts__questions">При возникновении вопросов вы можете обратиться:</div>
+        <div class="contacts__name">Мария Гурьева</div>
+        <div class="contacts__contacts-block">
+          <div class="contacts__email">E-mail: <a href="mailto:mvgureva@rnd.beeline.ru">mvgureva@rnd.beeline.ru</a>
+          </div>
+          <div class="contacts__tel">Тел.: +7 961 274 50 63</div>
+        </div>
+      </div>
+    </section>
+    <section class="container section">
+      <div class="foto-video__content"><a href="#" class="foto-video-container">
+          <div class="foto-video-title">Фото</div></a><a href="#" class="foto-video-container">
+          <div class="foto-video-title">Видео</div></a></div>
+    </section>
+  </div>
+  <div class="popup">
+    <div class="popup-overlay">
+      <div class="popup-container">
+        <button class="popup-close"></button>
+        <div class="popup__text">Ваш номер стола:</div>
+        <div class="popup__number">25</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script>require('initialize');</script>
+</body>
