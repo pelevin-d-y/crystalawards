@@ -3645,6 +3645,18 @@ p {
   color: #e9c838;
   text-shadow: 0 0 10px rgba(255, 210, 119, 0.5); }
 
+.location__data-time-before {
+  margin-right: 10px; }
+
+.location__data-time-after {
+  margin-left: 6px; }
+
+.location__data-time-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px; }
+
 .location__data {
   font-size: 35px;
   font-weight: bold;
@@ -3659,7 +3671,8 @@ p {
   margin-top: 20px; }
 
 .location__data-time {
-  margin-top: 15px; }
+  margin-top: 15px;
+  vertical-align: middle; }
 
 @media (max-width: 768px) {
   .location__content {
@@ -3786,6 +3799,9 @@ p {
 .contacts__email a {
   color: #fff;
   text-decoration: underline; }
+
+.contacts__tel {
+  color: #fff; }
 
 @media (max-width: 768px) {
   .contacts {
