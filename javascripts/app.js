@@ -1814,15 +1814,29 @@ var _jqueryAutocomplete = require('jquery-autocomplete');
 
 var _jqueryAutocomplete2 = _interopRequireDefault(_jqueryAutocomplete);
 
+var _fancybox = require('@fancyapps/fancybox');
+
+var _fancybox2 = _interopRequireDefault(_fancybox);
+
 var _data = require('./data');
 
 var _data2 = _interopRequireDefault(_data);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+jQuery('.location__map-link').fancybox({
+		afterLoad: function afterLoad() {
+				_jquery2.default.fn.fullpage.setAllowScrolling(false);
+		},
+
+		afterClose: function afterClose() {
+				_jquery2.default.fn.fullpage.setAllowScrolling(true);
+		}
+}
+
 // fullpage
 
-(0, _jquery2.default)(document).ready(function () {
+);(0, _jquery2.default)(document).ready(function () {
 		(0, _jquery2.default)('#fullpage').fullpage({
 				anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
 				menu: '#menu',
