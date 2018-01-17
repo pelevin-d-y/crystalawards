@@ -3652,11 +3652,32 @@ p {
   text-shadow: 0 0 10px rgba(255, 210, 119, 0.5);
   margin-top: 5px; }
 
+.location__map-text {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 650px;
+  width: 100%;
+  margin-top: 20px; }
+
+.location__data-time {
+  margin-top: 15px; }
+
 @media (max-width: 768px) {
   .location__content {
     flex-direction: column; }
   .location__text {
     margin-bottom: 40px; } }
+
+@media (max-width: 550px) {
+  .location__text {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .location__data {
+    font-size: 29px; }
+  .location__text span {
+    font-size: 29px; }
+  .location__map-text {
+    margin-top: 7px;
+    font-size: 17px; } }
 
 .dress-code {
   display: flex;
