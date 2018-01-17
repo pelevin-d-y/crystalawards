@@ -3646,7 +3646,8 @@ p {
   text-shadow: 0 0 10px rgba(255, 210, 119, 0.5); }
 
 .location__data-time-before {
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-left: 5px; }
 
 .location__data-time-after {
   margin-left: 6px; }
