@@ -2771,7 +2771,9 @@ img {
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); } }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .page-header__content {
+    padding-top: 25px; }
   .page-header__text {
     font-size: 19px; } }
 
@@ -2916,7 +2918,10 @@ p {
   font-family: "Crimson Text";
   color: #222; }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .navBurger {
+    left: 20px;
+    top: 20px; }
   .main-nav ul li a {
     font-size: 25px; }
     .main-nav ul li a:hover, .main-nav ul li a:active, .main-nav ul li a:focus {
@@ -2993,6 +2998,10 @@ p {
   .dress-code__section-text {
     font-size: 17px; } }
 
+@media (max-width: 550px) {
+  .dress-code__text {
+    padding: 25px; } }
+
 .seating__content {
   margin: 0 auto;
   max-width: 600px;
@@ -3061,7 +3070,8 @@ p {
 
 @media (max-width: 768px) {
   .contacts {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    padding: 20px; } }
 
 .foto-video__content {
   display: flex;
