@@ -452,6 +452,13 @@ img {
 .hidden {
   display: none; }
 
+.ie-bg {
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+
 @media (max-width: 600px) {
   .container {
     padding: 0 12px; } }
@@ -3646,8 +3653,7 @@ p {
   text-shadow: 0 0 10px rgba(255, 210, 119, 0.5); }
 
 .location__data-time-before {
-  margin-right: 10px;
-  margin-left: 5px; }
+  margin-right: 10px; }
 
 .location__data-time-after {
   margin-left: 6px; }
@@ -3766,6 +3772,8 @@ p {
   padding: 10px 25px;
   margin: 0 auto;
   margin-top: 45px;
+  max-width: 250px;
+  width: 100%;
   border-radius: 27.5px;
   color: #fff;
   cursor: pointer;

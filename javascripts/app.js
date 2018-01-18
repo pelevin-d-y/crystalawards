@@ -266,6 +266,10 @@ var dataList = [{
   "ФИО": "Брагинец Мария Александровна",
   "стол": 3
 }, {
+  "№": 28,
+  "ФИО": "Яловенко Марина Евгеньевна",
+  "стол": 3
+}, {
   "№": 29,
   "ФИО": "Исмаилова Саида Газиевна",
   "стол": 10
@@ -276,10 +280,6 @@ var dataList = [{
 }, {
   "№": 31,
   "ФИО": "Кравченко Регина Вадимовна",
-  "стол": 10
-}, {
-  "№": 32,
-  "ФИО": "Фоменко Светлана Сергеевна",
   "стол": 10
 }, {
   "№": 33,
@@ -1824,6 +1824,13 @@ var _data2 = _interopRequireDefault(_data);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var UserAgentString = navigator.userAgent;
+
+if (UserAgentString.indexOf('Trident/7.0') + 1) {
+		(0, _jquery2.default)('#c1').addClass('hidden');
+		(0, _jquery2.default)('#c2').addClass('hidden');
+}
+
 jQuery('.location__map-link').fancybox({
 		afterLoad: function afterLoad() {
 				_jquery2.default.fn.fullpage.setAllowScrolling(false);
@@ -1901,8 +1908,12 @@ popupButtonClose.click(function () {
 		(0, _jquery2.default)("body").toggleClass("locked");
 });
 
-var links = document.querySelectorAll('.main-nav__link');
-Array.from(links).forEach(function (link) {
+// var links = document.querySelectorAll('.main-nav__link')
+var links = (0, _jquery2.default)('.main-nav__link');
+
+console.log(links);
+
+links.each(function (a, link) {
 		link.addEventListener('click', function () {
 				(0, _jquery2.default)(".main-nav-overlay").removeClass("open");
 				(0, _jquery2.default)("body").removeClass("locked");
