@@ -4,9 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="shortcut icon" href="http://crystalawardsparty.ru/assets/26c73aa/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="ie-bg"></div>
   <canvas id="c1"></canvas>
   <canvas id="c2"></canvas>
   <div class="filter"></div>
@@ -19,7 +22,6 @@
           <li><a href="#page-3" class="main-nav__link">Dress code</a></li>
           <li><a href="#page-4" class="main-nav__link">Рассадка</a></li>
           <li><a href="#page-5" class="main-nav__link">Контакты</a></li>
-          <li><a href="#page-6" class="main-nav__link">Фото и видео</a></li>
         </ul>
       </nav>
     </div>
@@ -36,9 +38,14 @@
     <section class="location container section">
       <div class="location__content">
         <div class="location__text">Мы ждем вас
-          <div class="location__data">25 января</div> начало в<span> 18:00</span>
+          <div class="location__data">25 января</div>
+          <div class="location__data-time">сбор гостей<br>
+            <div class="location__data-time-div">с<span class="location__data-time-before"> 18:00 </span>до<span class="location__data-time-after"> 19:00</span></div>
+          </div>
         </div>
-        <div class="location__map"><img src="./images/map.png" class="map"></div>
+        <div class="location__map"><a href="./images/map.png" data-fancybox class="location__map-link"><img src="./images/map.png" class="map"></a>
+          <div class="location__map-text">Вся информация о трансфере будет вам выслана дополнительно</div>
+        </div>
       </div>
     </section>
     <section class="container section">
@@ -73,18 +80,13 @@
         </div>
       </div>
     </section>
-    <section class="container section">
-      <div class="foto-video__content"><a href="#" class="foto-video-container">
-          <div class="foto-video-title">Фото</div></a><a href="#" class="foto-video-container">
-          <div class="foto-video-title">Видео</div></a></div>
-    </section>
   </div>
   <div class="popup">
     <div class="popup-overlay">
       <div class="popup-container">
         <button class="popup-close"></button>
         <div class="popup__text">Ваш номер стола:</div>
-        <div class="popup__number">25</div>
+        <div class="popup__number">Нет совпадений</div>
       </div>
     </div>
   </div>
